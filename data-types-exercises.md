@@ -9,6 +9,7 @@
 ```rb
 2 ** 3
 ```
+8
 ```text
 Your answer.
 ```
@@ -16,6 +17,7 @@ Your answer.
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
+144
 ```text
 Your answer.
 ```
@@ -23,12 +25,14 @@ Your answer.
 ```rb
 ("a milli " + "a milli") * 3
 ```
+a milli a millia milli a millia milli a milli
 ```text
 Your answer.
 ```
 
 ```rb
 ("a milli " * 4) / 2
+Error out
 ```
 ```text
 Your answer.
@@ -38,6 +42,7 @@ Your answer.
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
+Error out
 ```text
 Your answer.
 ```
@@ -45,6 +50,7 @@ Your answer.
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
+My favorite number is: 13
 ```
 ```text
 Your answer.
@@ -55,14 +61,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[false ] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[ false] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -77,6 +83,7 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
+My name is: 
 ```text
 Your answer.
 ```
@@ -87,6 +94,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
+nil 
+because the name is nil which is false.
 ```text
 Your answer.
 ```
@@ -97,6 +106,8 @@ if age
   puts "My age is: " + no_name
 end
 ```
+Error out because there is no value for no_name
+
 ```text
 Your answer.
 ```
@@ -107,6 +118,7 @@ if age
   puts "My age is: " + age
 end
 ```
+it will ask for the age and then put it "My age is: "
 ```text
 Your answer.
 ```

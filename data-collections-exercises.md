@@ -101,3 +101,32 @@ Print out each key-value pair in the following format - "KEY's is equal to VALUE
 ```rb
 # Your answer here
 ```
+
+
+
+ planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
+planeteers[1]
+planeteers.push('Heart')
+planeteers = planeteers - ["Captain Planet"]
+planeteers
+
+ rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]
+ heroes=rangers+planeteers
+ heroes.sort
+ heroes.shuffle
+ heroes.sample
+ heroes.select { |word| word.start_with?('B') }.first(5)
+ninja_turtle = {
+  name: "Michelangelo",
+  weapon: "Nunchuks",
+  radical: true,
+}
+ninja_turtle[:age] = 15
+ninja_turtle.delete('radical')
+ninja_turtle
+ninja_turtle[:pizza_toppings]= ["cheese", "pepperoni", "peppers"]
+# ninja_turtle.values.fifth[1]
+# ninja_turtle["pizza_toppings"][1]
+# ninja_turtle.dig 'pizza_toppings', 1
+ninja_turtle.to_a[4][1][0]
+ninja_turtle.each{|keys,values|"#{keys} is #{values}"}
