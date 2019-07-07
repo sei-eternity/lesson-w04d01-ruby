@@ -10,28 +10,27 @@
 2 ** 3
 ```
 ```text
-Your answer.
+The result will be error but the terminal output a '8'
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
-```
+As same as the terminal answer '144'```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a milli a milli a milli a milli a milli but the terminal answer differ
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+a milli a milli but the terminal answer differ
 ```
 
 ```rb
@@ -39,16 +38,14 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
-```
+i axpected the terminal to display the sentenc with the entered number but it says can't implicit a number with a string without using s_to. method```
 
 ```rb
 my_favorite_number = 13
-puts "My favorite number is: #{my_favorite_number}"
+puts "My favorite number is: #{my_favorite_number}" --> -->
 ```
 ```text
-Your answer.
-```
+My favorite number is: 13```
 
 ### Truthiness and Falsiness
 
@@ -78,7 +75,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: " + no_name >> because the no_name variable is empty it displayed as it.
 ```
 
 ```rb
@@ -88,7 +85,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: " + no_name >> because the no_name variable is empty it displayed as it.
 ```
 
 ```rb
