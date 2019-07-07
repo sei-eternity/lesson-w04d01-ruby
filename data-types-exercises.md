@@ -9,45 +9,45 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```
+144 
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+```
+Error string not integer . 
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+```
+Error - not a string 
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
-```text
-Your answer.
+```
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -77,8 +77,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```
+My name is: 
 ```
 
 ```rb
@@ -87,8 +87,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```
+Won't excute .
 ```
 
 ```rb
@@ -97,8 +97,8 @@ if age
   puts "My age is: " + no_name
 end
 ```
-```text
-Your answer.
+```
+Error 
 ```
 
 ```rb
@@ -107,8 +107,7 @@ if age
   puts "My age is: " + age
 end
 ```
-```text
-Your answer.
+ My age is : 
 ```
 
 ### Conditionals
@@ -134,10 +133,18 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+# for i in 1..100 do
+#     if ((i % 5) == 0) && ((i % 3) == 0)
+#         puts "FizzBuzz"
+#     elsif (i % 5) == 0
+#         puts "Buzz"
+#     elsif (i % 3) == 0
+#         puts "Fizz"
+#     else
+#         puts "#{i}"
+#     end
+# end
   ```
 
 </details>
+
