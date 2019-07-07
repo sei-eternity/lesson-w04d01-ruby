@@ -10,28 +10,33 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
+it results in the power of 2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
+it yields to the result of the values between quotes 
+raised to power 2
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
+it yields to the string between quotes times 3
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error out
+because of trying to dividing a string by a number
 ```
 
 ```rb
@@ -39,7 +44,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error out
+the my_favorite_number in puts has to be used with to_s
 ```
 
 ```rb
@@ -47,7 +53,8 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
+because we used #{} for the variable in puts method
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +62,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
+[*] false
+[*] 0
+[*] ""
 [ ] null
-[ ] [ ] (empty array)
+[*] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +85,8 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
+since no_name is ""  which is a falsy value, the condition won't be met 
 ```
 
 ```rb
@@ -88,7 +96,8 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
+since no_name is nil  which is a falsy value, the condition won't be met 
 ```
 
 ```rb
@@ -98,7 +107,8 @@ if age
 end
 ```
 ```text
-Your answer.
+Error out
+no_name has not been declared
 ```
 
 ```rb
@@ -108,7 +118,8 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 40
+it will result in printing the message in the puts method
 ```
 
 ### Conditionals
