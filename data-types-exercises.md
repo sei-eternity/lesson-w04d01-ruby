@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli".
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+NoMethodError:
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+YTypeError:.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13.
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[ false] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[false ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil.
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+TypeError.
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 20
 ```
 
 ### Conditionals
@@ -127,7 +127,21 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 
 Your output should look something like this...
 ```
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
+number = 0
+
+while number <= 100
+if number % 3 == 0 && number % 5 == 0
+    p "FizzBuzz"
+elsif number  % 5 == 0
+    p "Buzz"
+    elsif number % 3 == 0
+        p "Fizz"
+    else
+        p "#{number}"
+    end
+
+    number += 1
+end
 ```
 
 <details>
